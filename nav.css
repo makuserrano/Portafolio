@@ -24,8 +24,6 @@ li{
     align-items: center;
     justify-content:space-between;
     padding:20px ;
-    
-
 }
 
 .menu{
@@ -53,17 +51,9 @@ li{
     color: var(--thirty-color-color);
     background: var(--main-color); 
     transition: .3s all linear;
+    letter-spacing:2px;
+
 }
-
-
- 
-
-
-
-
-
-
-
 
 .open-menu,
 .close-menu {
@@ -73,26 +63,14 @@ li{
 
 
 
-@media (min-width:1400px){
-
-    .menu a{
-        margin:15px;
-        font-size: 1.1rem;
-    }
-
-
-
-}
 @media (max-width:1400px){
 
-    .menu a{
-        margin:-5px;
-        font-size: .9rem;
-    }
+   
 
 
 
 }
+
 
 
 
@@ -200,4 +178,22 @@ li{
         padding:0;
     }
   
+}
+
+/*================= 4K=================*/
+
+
+
+@media (min-width:1900px){
+    .nav-container{
+        height: 100px;
+    }
+    .responsive-icon{
+        font-size: 3.5rem;
+    }
+    .links {
+        font-size: 2rem;
+        font-weight: 500;
+        padding:30px;
+    }
 }

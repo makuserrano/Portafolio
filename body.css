@@ -6,14 +6,7 @@
     --main-color2:#f9faf5;
     --font-color: #fff;
 }
- /*     colores originales
-
-    --background-color:#021d34;
-    --nav-color: #012e46;
-    --thirty-color: #153f59;
-    --main-color: #302c9b;
-    --main-color2:#cfd4d8;
-    --font-color:#cfd4d8; */
+ 
 body{
     background-color: var(--background-color);
     font-family: 'Montserrat', sans-serif;
@@ -30,7 +23,7 @@ body{
     min-width: 100%;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 

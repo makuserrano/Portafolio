@@ -1,6 +1,149 @@
 .portafolio{
     display:flex;
-    justify-content: space-between;
-    width: 400px;
-    height: 800px;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.portafolio-title h3{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    font-size:1.8rem;
+    font-weight:800;
+    letter-spacing: 5px;
+    margin:70px auto;
+    padding:3px 4px;
+    color: var(--font-color);
+    border: 2px solid var(--nav-color);
+    border-radius: 8px;
+    background:var(--background-color);
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    width:250px;
+
+}
+.card-proyect {
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--nav-color);
+  width: 80%;
+  width: 300px;
+  height: 460px;
+  background-color: black;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 30px auto 30px
+
+}
+
+
+.proyect-1-img {
+  
+  height: 100%;
+  width: 100%;
+}
+.proyect-1-img img{
+  height: 100%;
+  object-fit: cover;
+  opacity: .2;
+}
+
+.proyect-1-info{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--background-color);
+  text-align: center;
+  border-top: 1px solid var(--nav-color);
+  min-height: 150px;
+}
+
+.proyect-1-info h3{
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin: 3px 0 3px;
+  font-weight: 700;
+  color: var(--font-color);
+}
+
+.proyect-1-info p {
+  font-size: .9rem;
+  padding: 5px 5px 15px;
+  font-weight: 400;
+}
+
+.proyect-1-info a{
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 400;
+  font-size: 1rem;
+  background: var(--nav-color);
+  width: 40%;
+  padding: 5px;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.proyect-1-info a:hover{
+  background: var(--main-color);
+  transition: all .3s;
+}
+
+
+
+@media  (min-width:600px) {
+
+  .portafolio{
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  
+}
+
+
+@media (min-width:768px){
+
+
+
+  
+}
+@media (min-width:1800px) {
+
+  .portafolio-title h3{
+    font-size: 3rem;
+    width:550px;
+
+  }
+
+  .card-proyect{
+    width:700px;
+    height: 960px;
+
+  }
+  .proyect-1-info{
+    height: 350px;
+
+  }
+  .proyect-1-info h3{
+    font-size: 2.6rem;
+  }
+  .proyect-1-info p{
+    font-size: 1.9rem;
+  }
+  .proyect-1-info a{
+    font-size: 1.9rem;
+
+  }
 }
