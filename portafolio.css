@@ -115,9 +115,22 @@
 
 @media (min-width:768px){
 
+  .card-proyect:hover {
+    transform: translateY(-5px);
+    transition: all .5s;
 
+  }
+  .proyect-1-img img:hover {
+    opacity: .7;
+    transition: all .5s ;
 
-  
+  }
+
+  .proyect-1-img img::after{
+    opacity: .7;
+    transition: all 10s ;
+  }
+
 }
 @media (min-width:1800px) {
 
