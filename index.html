@@ -5,142 +5,181 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="body.css"> 
+  <link rel="shortcut icon" href="./img/frame.svg">
+  <link rel="stylesheet" href="body.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="profile.css">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="about-me.css">
   <link rel="stylesheet" href="portafolio.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+    rel="stylesheet">
   <script defer src="app.js"></script>
-  
+
   <title>Portafolio MS</title>
 </head>
+
 <body>
-  
-<nav>
-  <div class="open-menu">
-    <a class="icon">M<span class="color">AKU</span></a>
-    
-    <ion-icon name="menu-outline"></ion-icon>
-  </div>
-  <div class="nav-container">
-    <a class="responsive-icon">M<span class="color">AKU</span></a>
+
+  <nav>
+    <div class="open-menu">
+      <a class="icon">M<span class="color">AKU</span></a>
+
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
+    <div class="nav-container">
+      <a class="responsive-icon">M<span class="color">AKU</span></a>
       <ul class="menu">
         <buttom class="close-menu">
-        <ion-icon name="close-outline"></ion-icon>
-      </buttom>
-      <li><a href="#home" class="links">Home</a></li>
-      <li><a href="#about-me" class="links">About me</a></li>
-      <li><a href="#portafolio" class="links">Proyects</a></li>
-      <li><a href="#contact-me" class="links">Contact</a></li>
+          <ion-icon name="close-outline"></ion-icon>
+        </buttom>
+        <li><a href="#home" class="links">Home</a></li>
+        <li><a href="#about-me" class="links">About me</a></li>
+        <li><a href="#portafolio-title" class="links">Proyects</a></li>
+        <li><a href="#contact-container" class="links">Contact</a></li>
       </ul>
-  </div>
-</nav>
-    
-    
+    </div>
+  </nav>
+
+
 
   <section class="home" id="home">
     <div class="home-info">
       <h1>Hi, I'm&nbsp;<span class="color-h1">Maku Serrano</span></h1>
-      <h2>Front end developer</h2> 
+      <h2>Front end developer</h2>
     </div>
     <div class="home-img">
-    <div class="aro"> 
+      <div class="aro">
         <img src="img/yofachero1.jpeg" alt="Maku Serrano" class="img-front">
       </div>
     </div>
-    <div class="home-img-responsive"> <!--box-->
+    <div class="home-img-responsive">
+      <!--box-->
       <img src="img/yofachero1.jpeg" alt="Maku Serrano" class="img-front">
-    </div>  
-    
+    </div>
+
   </section>
 
   </div>
-    
+
 
 
   <section class="about-me" id="about-me">
-      <span class="about-me-img">
+    <!---<span class="about-me-img">
         <img src="img/maku-about-me-img.jpg" alt="Maku Serrano">
-      </span>  
+      </span>  -->
     <div class="about-me-text">
       <h3>About Me</h3>
       <p>Hola mi nombre es Maku Esteban Serrano nací en Argentina y tengo 22 años. Soy desarrollador web Front End,
-        tengo conocimientos en HTML5, CSS y JavaScript. Actualmente estudio en la Universidad Nacional de Tres de Febrero.</p>
-        
-      </div>
-     
-  </section>
-  <div class="portafolio-title">
-    <h3>Proyects</h3>
-  </div>
-  <section class="portafolio" id="portafolio">
-    
-   
-    <div class="card-proyect">
-        
-   <!--- ///////////////////////////// proyecto 1 //////////// ////////////////////////////////-->
-        <div class="proyect-1-img">
-      
-          <img src="./img/proyecto1.png">
-         
-        </div>
-      
-        <div class="proyect-1-info">
-          <h3>App Presupuesto</h3>
-          <p>Esta pagina calcula el presupuesto disponible, en el cual se puede agregar egresos e ingresos.</p>
-          <a href="https://github.com/makuserrano/Presupuesto">Ver más</a>
-       </div>
+        tengo conocimientos en HTML5, CSS y JavaScript. Actualmente estudio en la Universidad Nacional de Tres de
+        Febrero.</p>
     </div>
-  
-    <!--- // proyecto 2 //////////// ///                       //////////////////////////////////-->
+    <div class="about-me-icons">
+
+
+
+
+    </div>
+  </section>
+    <div class="portafolio-title" id="portafolio-title">
+      <h3>Proyects</h3>
+    </div>
+  <section class="portafolio">
     
+
     <div class="card-proyect">
-      
+
+      <!--- ///////////////////////////// proyecto 1 //////////// ////////////////////////////////-->
       <div class="proyect-1-img">
-    
-        <img src="./img/proyecto2.png">
-       
+
+        <img src="./img/proyecto1.png">
+
       </div>
-    
+
+      <div class="proyect-1-info">
+        <h3>App Presupuesto</h3>
+        <p>Esta pagina calcula el presupuesto disponible, en el cual se puede agregar egresos e ingresos.</p>
+        <a href="https://github.com/makuserrano/Presupuesto">Ver más</a>
+      </div>
+    </div>
+
+    <!--- // proyecto 2 //////////// ///                       //////////////////////////////////-->
+
+    <div class="card-proyect">
+
+      <div class="proyect-1-img">
+
+        <img src="./img/proyecto2.png">
+
+      </div>
+
       <div class="proyect-1-info">
         <h3>Galería</h3>
         <p>Galería de imagenes de Buenos Aires, Argentina.</p>
         <a href="https://github.com/makuserrano/galeria">Ver más</a>
       </div>
+    </div>
+
+
+    <!--- // proyecto 3 //////////// ///                       //////////////////////////////////-->
+
+    <div class="card-proyect">
+
+      <div class="proyect-1-img">
+
+        <img src="./img/proyecto3.png">
+
+      </div>
+
+      <div class="proyect-1-info">
+        <h3>TrailerFlix</h3>
+        <p>Pagina copia netflix.</p>
+        <a href="https://github.com/makuserrano/netflix">Ver más</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="contact-container" id="contact-container">
+    <h3>Contact</h3>
+    <form>
+      <input type="text" placeholder="Nombre" class="name" required>
+      <input type="email" name="" id="" placeholder="Email" class="email" required>
+      <textarea name="" id="" cols="30" rows="10"   class="message" required></textarea>
+      <input type="submit" value="Enviar" class="send-btn">
+      
+    </form>
+
+  </section>
+  <footer>
+    <div class="footer-text">
+      <p>® 2022 - Created by MAKU SERRANO</p>
+  </footer>
   </div>
 
 
-   <!--- // proyecto 3 //////////// ///                       //////////////////////////////////-->
-    
-   <div class="card-proyect">
-      
-    <div class="proyect-1-img">
-  
-      <img src="./img/proyecto3.png">
-     
-    </div>
-  
-    <div class="proyect-1-info">
-      <h3>TrailerFlix</h3>
-      <p>Pagina copia netflix.</p>
-      <a href="https://github.com/makuserrano/netflix">Ver más</a>
-    </div>
-</div>
-   
-  </section>
+  <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<!--  <section class="contact-me" id="contact-me">
-    <h3></h3>
-  </section> 
-  <footer></footer>-->
+  <script type="text/javascript">
+
+    (function() {
+    emailjs.init('yEDD0nY8GKVrRKMUN');
+    })();
+  </script>
+
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
+
 </body>
 
 </html>

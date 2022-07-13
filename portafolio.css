@@ -2,25 +2,24 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    
     flex-wrap: wrap;
     flex-direction: column;
     
 }
-
 .portafolio-title h3{
     display:flex;
     justify-content:center;
+    align-self: center;
+    width:250px;
     text-align:center;
     font-size:1.8rem;
     font-weight:800;
     letter-spacing: 5px;
-    margin:70px auto;
+    margin: 130px auto 30px ;
     padding:3px 4px;
+    background-color: var(--background-color);
     color: var(--font-color);
-    border: 2px solid var(--nav-color);
     border-radius: 8px;
-    background:var(--background-color);
     box-shadow:
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -28,27 +27,30 @@
     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
     100px 100px 80px rgba(0, 0, 0, 0.07);
-    width:250px;
 
 }
 .card-proyect {
   display: flex;
-  border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--nav-color);
-  width: 80%;
-  width: 300px;
-  height: 460px;
-  background-color: black;
   justify-content: center;
   flex-direction: column;
+  width: 80%;
+  max-width: 19rem;
+  height: 410px;
+  border-radius: 8px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  50px 50px 40px rgba(0, 0, 0, 0.07);
   overflow: hidden;
-  margin: 30px auto 30px
-
+  margin: 30px auto;
 }
 
 
 .proyect-1-img {
+  background-color: black;
   
   height: 100%;
   width: 100%;
@@ -56,7 +58,9 @@
 .proyect-1-img img{
   height: 100%;
   object-fit: cover;
-  opacity: .2;
+  opacity: .3;
+  transform: translatey(-1px);
+  
 }
 
 .proyect-1-info{
@@ -65,7 +69,6 @@
   flex-direction: column;
   background: var(--background-color);
   text-align: center;
-  border-top: 1px solid var(--nav-color);
   min-height: 150px;
 }
 
@@ -141,7 +144,7 @@
   }
 
   .card-proyect{
-    width:700px;
+    max-width:700px;
     height: 960px;
 
   }

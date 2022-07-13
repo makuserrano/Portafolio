@@ -11,7 +11,6 @@ body{
     background-color: var(--background-color);
     font-family: 'Montserrat', sans-serif;
     color: var(--font-color);
-   
     /*background: -webkit-gradient(linear, left top, left bottom, from(#000a23), color-stop(#02152b) ,color-stop(#021d34), color-stop(#02253d) ,color-stop(#012e46),to(#153f59));
     background: -o-linear-gradient(top, #000a23, #02152b ,#021d34, #02253d ,#012e46,#153f59);
     background: linear-gradient(to bottom, #000a23, #02152b ,#021d34, #02253d ,#012e46,#153f59);    */
@@ -19,8 +18,7 @@ body{
     background-size:cover;
     background-attachment:fixed;
     background-repeat: no-repeat;
-    max-height: 100vh;
-    min-width: 100%;
+    height: 100vh;
 }
 
 html {
