@@ -73,13 +73,17 @@ function success(){
 
 
 //scroll
+
+
 const sr = ScrollReveal ({
     distance:'60px',
     duration:2500,
     reset:true
 })
 
-ScrollReveal().reveal('.home-info , .social-media-container', {delay:200, origin: 'top', reset:true, distance:'60px'});
+
+ScrollReveal().reveal('nav', {delay:100, origin: 'top'});
+ScrollReveal().reveal('.home-info , .social-media-container', {delay:300, origin: 'top', reset:true, distance:'60px'});
 ScrollReveal().reveal('.home-img', {delay:400, origin: 'top'});
 ScrollReveal().reveal('.about-me', {delay:100, reset:false});
 ScrollReveal().reveal('.portafolio-title, .portafolio, .contact-container', {delay:200, reset:false, origin:'top'});
