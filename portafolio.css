@@ -57,7 +57,8 @@
 }
 .proyect-1-img img{
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: .3;
   transform: translatey(-1px);
   
@@ -70,7 +71,9 @@
   background: var(--background-color);
   text-align: center;
   min-height: 9.375rem;
-  position: relative;
+  height: 60%;
+  width: 100%;
+  
 }
 
 .proyect-1-info h3{

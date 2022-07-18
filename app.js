@@ -48,6 +48,31 @@ function sendmail(name, email, msg) {
     });
 }
 
+//alerts
+
+function emptyerror(){
+    swal({
+        title: "Error!",
+        text: "Especifica al menos un destinatario.",
+        icon: "error",
+      });
+}
+
+function success(){
+    swal({
+        title: "Enviado!",
+        text: "",
+        icon: "success",
+      });
+}
+
+
+
+
+
+
+
+//scroll
 const sr = ScrollReveal ({
     distance:'60px',
     duration:2500,
