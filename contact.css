@@ -2,24 +2,26 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 60%;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 5rem;
+   
 }
 
 .contact-container h3 {
     display:flex;
     justify-content:center;
-    width:250px;
+    width:15.625rem;
     text-align:center;
     font-size:1.8rem;
     font-weight:800;
-    letter-spacing: 5px;
-    margin:40px;
-    padding:3px 4px;
+    letter-spacing: 0.313rem;
+    margin: 8.125rem auto 1.875rem;
+    padding:0.188rem 0.25rem;
     background-color: var(--background-color);
     color: var(--font-color);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-shadow:
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -35,7 +37,7 @@ form{
     align-self: center;
     margin:4rem;
     gap: 1rem;
-    max-width: 600px;
+    max-width: 37.5rem;
     width: 100%;
     margin:4rem;
 }
@@ -47,17 +49,17 @@ form{
     background: var(--background-color);
     color: var(--font-color);
     border-radius: .4rem;
-    padding: 15px;
+    padding: 0.938rem;
     font-weight:300;
     font-size: 1rem;
 }
 
 
 .contact-container .send-btn {
-    width: 120px;
+    width: 7.5rem;
     align-self: center;
     background: var(--nav-color);
-    padding:12px;
+    padding:0.75rem;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
@@ -74,6 +76,38 @@ form{
 
     form{
         width: 90%;
+    }
+    .contact-container h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:2559px){
+
+    .contact-container h3 {
+        font-size: 3rem;
+        width:34.375rem;
+        margin-top: 15rem;
+
+     }
+
+     form {
+        gap: 3rem;
+        max-width: 100rem;
+        margin:10rem;
+    }
+
+    .contact-container input,.contact-container textarea{
+       
+        border-radius: .4rem;
+        padding: 2rem;
+        font-weight:300;
+        font-size: 2.1rem;
+    }
+
+    .contact-container .send-btn{
+        font-size: 2rem;
+        width: 10rem;
     }
 
 }

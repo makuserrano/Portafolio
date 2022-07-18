@@ -15,7 +15,7 @@ li{
     list-style: none;
 }
 .container{
-    width: 960px;
+    width: 60rem;
     width:100%;
 }
     
@@ -23,7 +23,7 @@ li{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding:20px ;
+    padding:1.25rem;
 }
 
 .menu{
@@ -35,23 +35,29 @@ li{
 .responsive-icon{
     font-weight: 600;
     font-size:1.6rem;
-    letter-spacing:4px;
+    letter-spacing:0.25rem;
+    color: var(--font-color);
     
+}
+.responsive-icon a{
+    text-decoration: none;
+    color: var(--font-color);
+
 }
 .links{
     font-size: .9rem;
-    padding: 10px 10px; ;
+    padding: 0.625rem 0.625rem;
     color: var(--font-color);
     border-radius: .2rem;
     font-weight: 500;
-    letter-spacing:1px;
+    letter-spacing:0.063rem;
 }
 
 .links:hover{
     color: var(--thirty-color-color);
     background: var(--main-color); 
     transition: .3s all linear;
-    letter-spacing:2px;
+    letter-spacing:0.125rem;
 
 }
 
@@ -111,11 +117,11 @@ li{
     .menu a {
         text-decoration: none;
         color: var(--font-color);
-        padding:0 15px;
+        padding:0 0.938rem;
         font-size: 1.3rem;
         font-weight: 500;
-        line-height: 60px;
-        margin:15px;
+        line-height: 3.75rem;
+        margin:0.938rem;
         
     }
     .links:hover{
@@ -145,7 +151,7 @@ li{
         justify-content: flex-end;
         font-size:2.7rem;
         cursor:pointer;
-        padding:10px;
+        padding:0.625rem;
         -webkit-box-shadow: 0 0 2px var(--font-color);
         box-shadow: 0 0 2px var(--font-color);
     }
@@ -166,7 +172,7 @@ li{
     .icon {
         font-size:1.4rem;
         font-weight:600;
-        letter-spacing:4px;
+        letter-spacing:0.25rem;
     }
 
     .responsive-icon{
@@ -184,9 +190,9 @@ li{
 
 
 
-@media (min-width:1900px){
+@media (min-width:2559px){
     .nav-container{
-        height: 100px;
+        height: 7.25rem;
     }
     .responsive-icon{
         font-size: 3.5rem;
@@ -194,6 +200,6 @@ li{
     .links {
         font-size: 2rem;
         font-weight: 500;
-        padding:30px;
+        padding:1.875rem;
     }
 }

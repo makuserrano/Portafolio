@@ -1,7 +1,14 @@
 .home {
-    padding-top:110px;
+    padding-top:6.875rem;
     height:100vh;
+    justify-content: center;
     
+}
+.home-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
 }
 .home-info h1,h2{
     text-align: center;
@@ -17,13 +24,13 @@
 .home-info h1{ 
     font-size:2rem;
     font-weight: 600;   
-    letter-spacing: .9px; 
+    letter-spacing: 0.056rem; 
 }
     
 .home-info h2{
     font-size: .9rem;
     font-weight:500;
-    letter-spacing: 5px;
+    letter-spacing: 0.313rem;
     color:var(--font-color);
 }
     
@@ -33,30 +40,22 @@
     display:-ms-flexbox;
     display:flex;
     -webkit-box-pack:center;
-        -ms-flex-pack:center;
-            justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
 
 }
     
-    
-/* esto lo pongo para que la imagen del responsive se vea xq no puedo acomodar la animacion*/  
-
-.home-img-responsive {
-    
-    display: none;
-
-}     
+      
 
 
 /*---------------------------el aro xD-------------------------------------*/
 
 .aro{
-    inset: 40px;
-    border:6px solid #070a1c;
+    border:0.375rem solid #070a1c;
     position: relative;
     z-index: 3;
-    width: 350px;
-    height: 350px;
+    width: 21.875rem;
+    height: 21.875rem;
     background: var(--background-color);
     border-radius: 50%;
     top:1;
@@ -70,11 +69,11 @@
     display:-ms-flexbox;
     display:flex;
     -webkit-box-pack:center;
-        -ms-flex-pack:center;
-            justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
     -ms-flex-item-align:center;
-        align-self:center;
-    padding:4px;
+    align-self:center;
+    padding:0.25rem;
     position:absolute;
     border-radius:50%;
     width:100%;
@@ -93,7 +92,7 @@
 .aro::before{
     content:'';
     position: absolute;
-    inset:-10px 140px;
+    inset:-0.625rem 8.75rem;
     background: -o-linear-gradient(135deg, var(--main-color), var(--main-color2));
     background: linear-gradient(315deg, var(--main-color), var(--main-color2));
     -webkit-transition: 0.5s;
@@ -103,17 +102,45 @@
             animation: circulo 4s linear infinite;
 }
 .aro:hover::before{
-    inset: -20px 0px;
+    inset: -1.25rem 0;
 
 }
 
 .aro::after{
     content:'';
     position:absolute;
-    inset:6px;
+    inset:0.375rem;
     background: var(--color-first);
     border-radius: 50%;
     z-index: 1;
+}
+
+/* ===============================SOCIALMEDIA==================================^*/
+
+
+.social-media-container{
+    display: flex;
+    bottom:0;   
+    margin:1.875rem 0.625rem;
+    position: absolute;
+    
+}
+.social-media li{
+    padding: 0.938rem 0;
+    font-size: 1.3rem;
+    list-style: none;
+
+}
+.social-media a{
+    text-decoration: none;
+    color: var(--font-color);
+
+}
+
+.social-media a:hover{
+    color: var(--background-color);
+    font-size:1.6rem;
+    transition: all .3s;
 }
 
 
@@ -155,10 +182,9 @@
 
 
 
-@media (max-width:768px){
+@media (max-width:769px){
     
     .home { 
-        padding-top:120px;
         text-align: center;
         font-size:1rem;
     }
@@ -168,8 +194,8 @@
     }
     .home h2{
         font-size: .9rem;
-        letter-spacing: 5px;
-        padding-bottom: 15px;
+        letter-spacing: 0.313rem;
+        padding-bottom: 0.938rem;
     }
     .home-img {
         display:-webkit-box;
@@ -183,8 +209,34 @@
                 align-items:center;
         
     }
+    
+
+    .social-media a:hover{
+        color: var(--font-color);
+        font-size:1.3rem;
+    }
+    .social-media-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 0.625rem;
         
 
+
+    }
+    
+
+    .social-media-container ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+        
+    
+    }
+    .social-media-container li{
+        padding: 0.625rem;
+    }
         
     
 }
@@ -203,12 +255,12 @@
     
     .aro{
         justify-content: center;
-        inset: 40px;
-        border:2px solid #070a1c;
+        inset: 2.5rem;
+        border:0.125rem solid #070a1c;
         position: relative;
         z-index: 3;
-        width: 310px;
-        height: 310px;
+        width: 19.375rem;
+        height: 19.375rem;
         background: var(--background-color);
         border-radius: 50%;
         top:1;
@@ -226,7 +278,7 @@
                 justify-content:center;
         -ms-flex-item-align:center;
             align-self:center;
-        padding:4px;
+        padding:0.25rem;
         position:absolute;
         border-radius:50%;
         width: 100%;;
@@ -238,6 +290,9 @@
         transition:0.5s;
         pointer-events: none;
     }
+    .home-info h1{
+        font-size: 1.5rem
+    }
 }
 
 
@@ -245,27 +300,27 @@
 
 
 
-@media (min-width:1900px){
+@media (min-width:2559px){
 
 
     .home-info h1{ 
         font-size:4rem;
         font-weight: 600;   
-        letter-spacing: .9px; 
+        letter-spacing: 0.056rem; 
     }
     .home-info h2{ 
         font-size:2rem;
         font-weight: 500;   
-        letter-spacing: 10px;
+        letter-spacing: 0.625rem;
         color:var(--font-color);
     }
     .aro{
-        inset: 200px;
-        border:6px solid #070a1c;
+        inset: 12.5rem;
+        border:0.375rem solid #070a1c;
         position: relative;
         z-index: 3;
-        width: 600px;
-        height: 600px;
+        width: 37.5rem;
+        height: 37.5rem;
         background: var(--background-color);
         border-radius: 50%;
         top:1;
@@ -274,6 +329,13 @@
         
     }
     
+
+    .social-media li{
+        padding: 1.875rem 0;
+        font-size: 2.5rem;
+        list-style: none;
+    
+    }
 
 
 }

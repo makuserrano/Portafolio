@@ -10,16 +10,16 @@
     display:flex;
     justify-content:center;
     align-self: center;
-    width:250px;
+    width:15.625rem;
     text-align:center;
     font-size:1.8rem;
     font-weight:800;
-    letter-spacing: 5px;
-    margin: 130px auto 30px ;
-    padding:3px 4px;
+    letter-spacing: 0.313rem;
+    margin:8.125rem auto 1.875rem ;
+    padding:0.188rem 0.25rem;
     background-color: var(--background-color);
     color: var(--font-color);
-    border-radius: 8px;
+    border-radius: 0.25rem;
     box-shadow:
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -35,8 +35,8 @@
   flex-direction: column;
   width: 80%;
   max-width: 19rem;
-  height: 410px;
-  border-radius: 8px;
+  height: 25.625rem;
+  border-radius: 0.25rem;
   box-shadow:
   2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
   6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -45,7 +45,7 @@
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
   50px 50px 40px rgba(0, 0, 0, 0.07);
   overflow: hidden;
-  margin: 30px auto;
+  margin: 1.875rem auto;
 }
 
 
@@ -69,20 +69,21 @@
   flex-direction: column;
   background: var(--background-color);
   text-align: center;
-  min-height: 150px;
+  min-height: 9.375rem;
+  position: relative;
 }
 
 .proyect-1-info h3{
   font-size: 1.2rem;
   letter-spacing: 3px;
-  margin: 3px 0 3px;
+  margin: 0.188rem 0 0.188rem;
   font-weight: 700;
   color: var(--font-color);
 }
 
 .proyect-1-info p {
   font-size: .9rem;
-  padding: 5px 5px 15px;
+  padding: 0.313rem 0.313rem 0.938rem;
   font-weight: 400;
 }
 
@@ -93,8 +94,8 @@
   font-size: 1rem;
   background: var(--nav-color);
   width: 40%;
-  padding: 5px;
-  border-radius: 8px;
+  padding: 0.313rem;
+  border-radius: 0.25rem;
   align-self: center;
 }
 
@@ -105,18 +106,25 @@
 
 
 
-@media  (min-width:600px) {
+@media  (min-width:768px) {
 
   .portafolio{
     justify-content: space-evenly;
     flex-direction: row;
   }
-
+  
   
 }
 
+@media (max-width:767px) {
+  .portafolio-title h3{
+    font-size: 1.5rem;
+  }
 
-@media (min-width:768px){
+}
+
+
+@media (min-width:1023px){
 
   .card-proyect:hover {
     transform: translateY(-5px);
@@ -135,21 +143,21 @@
   }
 
 }
-@media (min-width:1800px) {
+@media (min-width:2559px) {
 
   .portafolio-title h3{
     font-size: 3rem;
-    width:550px;
+    width:34.375rem;
 
   }
 
   .card-proyect{
-    max-width:700px;
-    height: 960px;
+    max-width:43.75rem;
+    height: 60rem;
 
   }
   .proyect-1-info{
-    height: 350px;
+    height: 21.875rem;
 
   }
   .proyect-1-info h3{
