@@ -187,15 +187,19 @@
     .home { 
         text-align: center;
         font-size:1rem;
+
     }
         
     .home h1{
         font-size: 1.7rem;
+        margin-top: -2rem;
+
     }
     .home h2{
         font-size: .9rem;
         letter-spacing: 0.313rem;
-        padding-bottom: 0.938rem;
+        
+
     }
     .home-img {
         display:-webkit-box;
@@ -241,21 +245,13 @@
     
 }
 
-@media (max-width:319px){
 
-    .home-info h1{
-        font-size: 1.5rem
-    }
-
-    
-}
 
 
 @media  (max-width:370px){
     
     .aro{
         justify-content: center;
-        inset: 2.5rem;
         border:0.125rem solid #070a1c;
         position: relative;
         z-index: 3;
@@ -291,7 +287,11 @@
         pointer-events: none;
     }
     .home-info h1{
-        font-size: 1.5rem
+        font-size: 1.35rem
+    }
+    .home-info h2{
+    font-size: .7rem;
+
     }
 }
 
