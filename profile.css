@@ -139,7 +139,7 @@
 
 .social-media a:hover{
     color: var(--background-color);
-    font-size:1.6rem;
+    padding-left: .092rem;
     transition: all .4s;
 }
 
