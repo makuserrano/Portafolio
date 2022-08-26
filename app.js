@@ -72,6 +72,8 @@ function success(){
 
 
 
+
+
 //scroll
 
 
@@ -88,3 +90,50 @@ ScrollReveal().reveal('.about-me', {delay:100, reset:false});
 ScrollReveal().reveal('.portafolio-title, .portafolio, .contact-container', {delay:200, reset:false, origin:'top'});
 
 
+//---------TP
+
+
+var usuarios = '';
+var visitas = 0;
+
+
+initialize();
+
+function initialize(){
+    document.getElementById('login').addEventListener('click', registro);
+
+    if (localStorage.getItem('visitas') !== null){
+        visitas = localStorage.getItem('visitas');
+    }
+    contador();
+    localStorage.setItem('visitas', visitas);
+   
+   
+    if (localStorage.getItem('usuarios') != null){
+        usuarios = localStorage.getItem('usuarios');
+        document.getElementById('login').innerHTML = 'Hola \n' + usuarios + '!';
+        document.getElementById('login').setAttribute('title', 'Visitas'+ visitas);
+
+    }
+
+}
+
+function registro(){
+    usuarios= prompt('ingrese su nombre');
+    while (usuarios == ''){
+        usuarios = prompt('ingrese su nombre');
+        if (usuarios == null){
+            return;
+        }
+    }
+    if (usuarios == null){
+        null
+    }
+    document.getElementById('login').innerHTML = '¡Hola  \n' + usuarios + '!';
+    document.getElementById('login').setAttribute('title', 'numero de visita' + visitas);
+    localStorage.setItem('usuarios', usuarios);
+}
+
+function contador(){
+    visitas++;
+}
